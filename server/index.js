@@ -17,6 +17,10 @@ app.use('/products', prouter);
 app.use("/events", erouter);
 app.use("/admins", authrouter);
 
+app.get("/", (req, res)=>{
+    res.send("APP IS RUNNING...")
+})
+
 
 mongoose.set('strictQuery', false);
 mongoose.connect(`mongodb+srv://lg500ng:KoEbKiMrSg7UXiXi@asp-cluster.arspmut.mongodb.net/?retryWrites=true&w=majority`)
