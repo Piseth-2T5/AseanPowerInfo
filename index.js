@@ -6,12 +6,12 @@ import dotenv from 'dotenv';
 import prouter from './routes/product.js';
 import erouter from './routes/event.js';
 import authrouter from './routes/auth.js';
-dotenv.config();
 const app = express();
 const PORT = process.env.PORT;
 app.use(bodyParser.json({limit:'100mb'}));
 app.use(bodyParser.urlencoded({extended: true, limit: '100mb'}));
 app.use(cors());
+dotenv.config();
 
 app.use('/products', prouter);
 app.use("/events", erouter);
