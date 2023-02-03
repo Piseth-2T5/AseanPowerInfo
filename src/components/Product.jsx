@@ -5,8 +5,6 @@ import { useDispatch  } from "react-redux";
 import { deleteProduct } from "../actions/product";
 import ProductDetail from "./ProductDetail";
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { solid} from '@fortawesome/fontawesome-svg-core/import.macro'
 
 const Product = ({product, setProductId}) =>{
     const [isProductDetail, setIsProdcutDetail] = useState(false)
@@ -23,7 +21,7 @@ const Product = ({product, setProductId}) =>{
                 <div className="product-card">
                     <div className="edit-button " >
                         <button className="btn btn-primary btn-collapse" type="button" data-bs-toggle="collapse" data-bs-target={`#edit-menu${product._id}`} aria-expanded="false" aria-controls={`#edit-menu${product._id}`}>
-                            <FontAwesomeIcon icon={solid("gear")}/>
+                            <i className="fa-solid fa-gear"></i>
                         </button>
                         <div className="collapse menu-collapse" id={`edit-menu${product._id}`}>
                             <div className="card ps-2 pt-4" >

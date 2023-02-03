@@ -2,8 +2,6 @@ import React,{useEffect} from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchEvents, deleteEvent } from '../actions/event';
 import moment from 'moment';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { solid} from '@fortawesome/fontawesome-svg-core/import.macro'
 
 import logo from "../assets/aplogo.jpg"
 const Event = ({setEventId}) =>{
@@ -39,7 +37,7 @@ const Event = ({setEventId}) =>{
                                     </div>
                                     <div className="edit-button position-absolute top-0 end-0" >
                                             <button className="btn btn-primary btn-collapse" type="button" data-bs-toggle="collapse" data-bs-target={`#edit-menu${event._id}`} aria-expanded="false" aria-controls={`#edit-menu${event._id}`}>
-                                                <FontAwesomeIcon icon={solid("gear")}/>
+                                                <i className="fa-solid fa-gear"></i>
                                             </button>
                                             <div className="collapse menu-collapse" id={`edit-menu${event._id}`}>
                                                 <div className="card ps-2 pt-4" >

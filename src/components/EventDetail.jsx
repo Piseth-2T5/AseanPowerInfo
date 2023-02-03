@@ -10,7 +10,7 @@ const EventDetail = ()=>{
     const { id } = useParams();
     useEffect(()=>{
         dispatch(fetchEvents());
-    }, [id])
+    }, [dispatch])
 
     const event  = useSelector(state=>state.events.find(ev => ev._id === id))
     const goBack = ()=>{

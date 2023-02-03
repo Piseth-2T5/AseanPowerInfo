@@ -10,10 +10,9 @@ const ProductDetail = ({productData}) =>{
     const {id} = useParams();
     useEffect(()=>{
         dispatch(fetchProducts());
-    }, [])
-    let product;
-    if(id) {product =  useSelector(state=>state.products.find(p => p._id === id))}
-    else { product = productData;}
+    }, [dispatch])
+    const productFromState = useSelector(state=>state.products.find(p => p._id === id))
+    const product = productFromState? productFromState : productData;
     const goBack = ()=>{
         navigate('/products');
     }

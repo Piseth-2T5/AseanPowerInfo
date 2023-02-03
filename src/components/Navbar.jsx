@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import {NavLink , useNavigate} from 'react-router-dom';
 import { useDispatch } from "react-redux";
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { solid} from '@fortawesome/fontawesome-svg-core/import.macro'
 import logo from '../assets/aplogo.jpg'
 const Navbar = () =>{
     const [user, setUser] = useState(JSON.parse(localStorage.getItem("profile")));
@@ -46,7 +44,7 @@ const Navbar = () =>{
                     </li>}
                     {user && 
                         (<div className="user-box">
-                            <p className="me-2 user-name"><span className="user-span"><FontAwesomeIcon icon={solid('user-secret')}/></span>{" Admin"} </p> 
+                            <p className="me-2 user-name"><span className="user-span"><i className="fa-solid fa-user"></i></span>{" Admin"} </p> 
                             <button className="btn-user" onClick={handleLogout} >Log out</button>
                         </div>
                            
