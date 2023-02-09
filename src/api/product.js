@@ -1,6 +1,7 @@
 import axios from 'axios';
+import { connection_url } from './url';
 
-const api  = axios.create({baseURL: 'https://aseanpowerinfo2.onrender.com/'});
+const api  = axios.create({baseURL: connection_url});
 
 api.interceptors.request.use((req) => {
     if(localStorage.getItem('profile')){

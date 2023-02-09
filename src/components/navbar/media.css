@@ -1,0 +1,23 @@
+@media (max-width: 991px){
+    .navbar-nav{
+        margin-top: 20px;
+    }
+    .active::after, .nav-link::after{
+        height: 100%;
+        opacity: .1;
+    }
+    .nav-item{
+        margin: 0;
+    }
+    .nav-link{
+        text-align: start;
+    }
+    .nav-item:hover  .nav-link::after,.nav-link:hover{
+        width: 100%;
+        color: #dfb64a;
+       
+    }
+    .user-box{
+        justify-content: start;
+    }
+}

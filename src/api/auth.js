@@ -1,6 +1,6 @@
 import axios from "axios";
-
-const api  = axios.create({baseURL: 'https://aseanpowerinfo2.onrender.com/'});
+import { connection_url } from './url';
+const api  = axios.create({baseURL: connection_url});
 
 
 

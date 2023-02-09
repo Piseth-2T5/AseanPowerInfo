@@ -1,0 +1,30 @@
+.heading-detail{
+    font-size: 28px;
+    font-weight: 800;
+    inline-size: 95%;
+}
+.para-detail{
+    font-size: 22px;
+    line-height: 44px;
+    padding: 20px 0;
+}
+
+.footer{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.cross-button-event{
+    border: none;
+    font-size: 24px;
+    padding: 0px 10px;
+    background-color: transparent;
+    transition: .2s ease;
+}   
+.cross-button-event:hover{
+    color: red;
+}
+a{
+    text-decoration: none !important;
+    color: black;
+}

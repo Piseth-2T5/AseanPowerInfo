@@ -1,0 +1,34 @@
+.product{
+    transition: .2s ease-out;
+}
+.product:hover{
+    transform: translateY(-8px);
+}
+.card-title{
+    font-weight: 700;
+    height: 24px;
+    overflow: hidden;
+}
+.card-text{
+    font-size: 18px;
+    height: 81px;
+    overflow: hidden;
+}
+.read-more{
+    cursor: pointer;
+    border-bottom-right-radius: 32px;
+    border-bottom-left-radius: 32px;
+    transition: .4s ease;
+}
+.read-more>p{
+    transition: .4s ease-in-out;
+}
+
+.read-more>p:hover{
+    transform: translateX(10px);
+
+}
+
+.read-more:hover{
+    background-color: #dfb64a !important;
+}

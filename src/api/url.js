@@ -1,0 +1,1 @@
+export const connection_url = "https://aseanpowerinfo2.onrender.com/"

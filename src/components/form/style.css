@@ -1,0 +1,15 @@
+.input-control{
+    position: relative;
+}
+
+.icon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 7px 7px;
+    font-size: 24px;
+    background-color:rgba(128, 128, 128, 0.063); 
+}
+.input-control>.form-control{
+    padding-left: 48px;
+}

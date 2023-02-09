@@ -1,0 +1,42 @@
+
+
+.heading-1, .heading-2,.heading-3, .list-heading{
+    margin: 10px 0;
+    font-weight: 800;
+    margin-bottom: 20px;
+} 
+.para-1, .para-2,.para-3{
+    font-size: 22px;
+    line-height: 40px;
+    margin-bottom: 24px;
+}
+
+.cross-button{
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    font-size: 24px;
+    color: black;
+    transition: .4s ease;
+    position: absolute;
+    top: 30px;
+    right: 14px;
+}
+
+.cross-button:hover{
+    background-color: red;
+    color: white;
+}
+
+.list-item{
+    font-size: 24px;
+    line-height: 40px;
+    margin: 10px 0;
+}
+
+.spinner-border{
+    position: absolute;
+    top: 300px;
+    left: 49%;
+}
